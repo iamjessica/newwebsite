@@ -1,0 +1,29 @@
+
+/* using bootstrap variables */
+
+$screen-xs-min: 480px;
+$screen-xs-max: 767px;
+$screen-sm-min: 768px;
+$screen-sm-max: 991px;
+$screen-md-min: 992px;
+$screen-md-max: 1199px;
+$screen-lg-min: 1200px;
+
+
+@mixin media($media) {
+  @if $media == large-screen {
+    @media only screen and (min-width: $screen-lg-min) { @content; }
+  }
+  @if $media == tablet-landscape {
+    @media only screen and (max-width: $screen-md-max) { @content; }
+  }
+  @else if $media == tablet-portrait {
+    @media only screen and (max-width: $screen-sm-max) { @content; }
+  }
+  @else if $media == mobile-landscape {
+    @media only screen and (max-width: $screen-xs-max) { @content; }
+  }
+  @else if $media == mobile {
+    @media only screen and (max-width: $screen-xs-min) { @content; }
+  }
+}

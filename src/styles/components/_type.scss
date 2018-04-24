@@ -1,0 +1,78 @@
+html, body {
+  font-size: $fs-base;
+  color: $color-text;
+  line-height: 2;
+  font-family: $ff-main;
+  @include media(tablet-landscape) {
+  font-size: calc(#{$fs-base} / 1.5);
+  }
+  @include media(mobile) {
+  font-size: calc(#{$fs-base} / 2);
+  }
+}
+
+p {
+  font-size: $fs-body;
+}
+
+h1 {
+  font-size: $fs-h1;
+  font-family: $ff-headings;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+h2 {
+  font-size: $fs-h2;
+  font-family: $ff-headings;
+  letter-spacing: normal;
+  color: $color-shade-300;
+  font-style: italic;
+}
+
+h3 {
+  font-size: $fs-h3;
+  font-family: $ff-headings;
+  letter-spacing: normal;
+  color: $color-shade-300;
+  font-style: italic;
+}
+
+h4 {
+  font-size: $fs-h4;
+}
+
+h5 {
+  font-size: $fs-h5;
+  text-transform: uppercase;
+}
+
+a {
+  color: $color-main;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: $ff-main;
+  font-size: $fs-h5;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-family: $ff-main;
+}
+
+a.button, button {
+  height: 8rem;
+  line-height: 8rem;
+  min-width: 32.5rem;
+  max-width: 100%;
+  text-align: center;
+  display: inline-block;
+  background: $color-white;
+}
+
+a.button.button-outline {
+  border: 1px solid $color-shade-200;
+}
+
+.emphasis {
+  color: $color-brown;
+}

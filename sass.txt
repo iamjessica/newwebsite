@@ -1,0 +1,1 @@
+sass --watch  src/styles/base.scss:dist/styles.css

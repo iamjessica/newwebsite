@@ -1,0 +1,41 @@
+.center-vertical {
+  display: flex;
+  align-items: center;
+}
+
+.centerY {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.center-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.section-padding {
+  padding-top: gs(1);
+  padding-bottom: gs(1);
+}
+.background-cover {
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center
+}
+
+.wrapper {
+  @include media(tablet-portrait) {
+    padding-left: $mobile-padding;
+    padding-right: $mobile-padding;
+  }
+}
